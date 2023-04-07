@@ -24,7 +24,6 @@ import java.util.Optional;
 public class qiCodeController {
 
   private final QrCodeService qrCodeService;
-  private final Logger logger;
 
   
 }
