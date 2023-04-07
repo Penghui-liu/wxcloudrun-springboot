@@ -1,6 +1,7 @@
 package com.tencent.wxcloudrun.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.tencent.wxcloudrun.service.InformService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,10 +18,12 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class InformController {
 
+  private final InformService informService;
+
   @PostMapping(value = "/inform")
   String post(@RequestBody JSONObject data) {
     log.info("接收到微信消息推送：{}", data);
-    return "";
+    return informService.handleInform(data);
   }
   
 }
