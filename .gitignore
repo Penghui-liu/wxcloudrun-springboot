@@ -15,3 +15,4 @@
 /target/classes/com/tencent/wxcloudrun/service/QrCodeService.class
 /target/classes/com/tencent/wxcloudrun/service/impl/QrCodeServiceImpl.class
 /target/classes/com/tencent/wxcloudrun/WxCloudRunApplication.class
+/target/classes/com/tencent/wxcloudrun/config/RestTemplateConfig.class
