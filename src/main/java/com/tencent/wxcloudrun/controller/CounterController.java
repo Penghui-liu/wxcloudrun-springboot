@@ -1,17 +1,15 @@
 package com.tencent.wxcloudrun.controller;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import com.tencent.wxcloudrun.config.ApiResponse;
 import com.tencent.wxcloudrun.dto.CounterRequest;
 import com.tencent.wxcloudrun.model.Counter;
 import com.tencent.wxcloudrun.service.CounterService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDateTime;
 import java.util.Optional;
-import java.util.List;
 
 /**
  * counter控制器
